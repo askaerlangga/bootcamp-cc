@@ -9,14 +9,21 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <title>Mahasiswa</title>
 </head>
 
 <body>
+    <nav class="navbar navbar-dark bg-purple">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Bootcamp CC</a>
+        <a href="../assets/helper/logout.php" class="btn btn-sm btn-danger" role="button">Logout</a>
+    </div>
+    </nav>
     <div class="container">
         <div>
         <h1 style="margin: 30px 0 20px 0; text-align:center">Data Mahasiswa</h1>
+        <a href="#" class="btn btn-sm bg-teal" role="button">Tambah</a>
             <table style="text-align: center;" class="table table-hover">
                 <thead style="text-align: center;">
                     <tr>
@@ -51,7 +58,7 @@
             </table>
         </div>
     </div>
-    <a href="../assets/helper/logout.php">LOGOUT</a>
+    
 
     <!-- Optional JavaScript; choose one of the two! -->
 
