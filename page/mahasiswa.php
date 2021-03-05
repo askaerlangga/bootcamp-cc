@@ -89,7 +89,7 @@
                         <td>
                             <a href=" edit.php?id= <?php echo $d['id']; ?>" class="btn btn-warning btn-sm"
                                 role="button">Edit</a>
-                            <a href=" hapus.php?id= <?php echo $d['id']; ?>" class="btn btn-danger btn-sm"
+                            <a href="../assets/helper/hapus_mahasiswa.php?id=<?php echo $d['id']; ?>" class="btn btn-danger btn-sm"
                                 role="button">Hapus</a>
                         </td>
                     </tr>
