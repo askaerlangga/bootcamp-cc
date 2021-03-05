@@ -28,7 +28,7 @@
 					if($_GET['pesan']=="sukses"){
 						echo "<div class='alert alert-success alert-dismissible fade show' role='alert'>Data Mahasiswa <strong>Berhasil Tersimpan!</strong><button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>";
 					}else{
-                        echo "<div class='alert alert-danger alert-dismissible fade show' role='alert'>Data Mahasiswa <strong>Berhasil Tersimpan!</strong><button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>";
+                        echo "<div class='alert alert-danger alert-dismissible fade show' role='alert'>Data Mahasiswa <strong>Gagal Tersimpan!</strong><button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>";
                     }
 				}
 				?>
