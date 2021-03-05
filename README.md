@@ -1,2 +1,5 @@
 # bootcamp-cc
-Bootcamp Update2
+CRUD Sederhana menggunakan PHP + Bootstrap<br><br>
+Login<br>
+Username : admin<br>
+Password : admin<br>
