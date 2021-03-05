@@ -6,20 +6,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-
-	
-
-
-	<div class="container">
+	<nav class="navbar navbar-dark bg-purple">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Bootcamp CC</a>
+		</div>
+    </nav>
+	<div class="container-fluid" style="margin-top: 50px ;">
 		<div class="row">
-			<div class="col"></div>
-			<div class="col formlogin">
+			<div class="col-sm-12 col-md-4"></div>
+			<div class="col-sm-12 col-md-4 formlogin">
 			<h1 class="judul">Login</h1>
-			<form action="cek_login.php" method="post">
+			<form action="assets/helper/cek_login.php" method="post">
 				<?php 
 				if(isset($_GET['pesan'])){
 					if($_GET['pesan']=="gagal"){
@@ -42,7 +43,7 @@
 				
 			</form>
 			</div>
-			<div class="col"></div>
+			<div class="col-sm-12 col-md-4"></div>
 		</div>
 	</div>
 	
