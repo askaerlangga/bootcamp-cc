@@ -23,6 +23,15 @@
     <div class="container">
         <div>
             <h1 style="margin: 30px 0 20px 0; text-align:center">Data Mahasiswa</h1>
+            <?php 
+				if(isset($_GET['pesan'])){
+					if($_GET['pesan']=="sukses"){
+						echo "<div class='alert alert-success alert-dismissible fade show' role='alert'>Data Mahasiswa <strong>Berhasil Tersimpan!</strong><button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>";
+					}else{
+                        echo "<div class='alert alert-danger alert-dismissible fade show' role='alert'>Data Mahasiswa <strong>Berhasil Tersimpan!</strong><button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>";
+                    }
+				}
+				?>
             <button type="button" class="btn btn-sm bg-teal" data-bs-toggle="modal" data-bs-target="#tambahMahasiswa">
                 Tambah
             </button>
