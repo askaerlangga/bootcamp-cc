@@ -2,9 +2,6 @@
     text-align: center;
     margin: 25px 0;
 }
-.container{
-    margin-top: 50px;
-}
 .formlogin{
     /* background: #6f42c1; */
     /* border: none; */
@@ -16,4 +13,10 @@
 .buttonlogin{
     background: #6f42c1 ;
     color: white;
+}
+.bg-purple{
+    background: #6f42c1;
+}
+.bg-teal{
+    background: #20c997 ;
 }
