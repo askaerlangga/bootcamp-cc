@@ -32,38 +32,12 @@
                     }
 				}
 				?>
+            <?php require_once('../assets/helper/modal.php'); ?>
             <button type="button" class="btn btn-sm bg-teal" data-bs-toggle="modal" data-bs-target="#tambahMahasiswa">
                 Tambah
             </button>
-            <div class="modal fade" id="tambahMahasiswa" tabindex="-1" aria-labelledby="tambahMahasiswaLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="tambahMahasiswaLabel">Tambah Mahasiswa</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form method="post" action="../assets/helper/tambah_mahasiswa.php">
-                                <div class="mb-3">
-                                    <label for="namaMahasiswa" class="form-label">Nama</label>
-                                    <input type="text" name="nama" class="form-control" id="namaMahasiswa" placeholder="Nama">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="nimMahasiswa" class="form-label">NIM</label>
-                                    <input type="number" name="nim" class="form-control" id="nimMahasiswa" placeholder="NIM">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="alamatMahasiswa" class="form-label">Alamat</label>
-                                    <input type="text" name="alamat" class="form-control" id="alamatMahasiswa" placeholder="Alamat">
-                                </div>
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                                <button type="submit" class="btn btn-primary">Simpan</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
+
             <table style="text-align: center;" class="table table-hover">
                 <thead style="text-align: center;">
                     <tr>
@@ -87,12 +61,18 @@
                         <td><?php echo $d['nim']; ?></td>
                         <td><?php echo $d['alamat'] ?></td>
                         <td>
-                            <a href=" edit.php?id= <?php echo $d['id']; ?>" class="btn btn-warning btn-sm"
-                                role="button">Edit</a>
-                            <a href="../assets/helper/hapus_mahasiswa.php?id=<?php echo $d['id']; ?>" class="btn btn-danger btn-sm"
-                                role="button">Hapus</a>
+
+                            <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#editMahasiswa<?php echo $d['id'] ?>">
+                                Edit
+                            </button>
+
+                            <a href="../assets/helper/hapus_mahasiswa.php?id=<?php echo $d['id']; ?>"
+                                class="btn btn-danger btn-sm" role="button">Hapus</a>
                         </td>
                     </tr>
+
+                    <?php include('../assets/helper/modal.php'); ?>
                 </tbody>
                 <?php 
                 }
