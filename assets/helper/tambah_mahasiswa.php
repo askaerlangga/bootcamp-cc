@@ -8,9 +8,10 @@ $nim = $_POST['nim'];
 $alamat = $_POST['alamat'];
  
 // menginput data ke database
-mysqli_query($koneksi,"insert into mahasiswa values('','$nama','$nim','$alamat')");
- 
-// mengalihkan halaman kembali ke index.php
-header("location:../../page/mahasiswa.php");
- 
+$data = mysqli_query($koneksi,"insert into mahasiswa values(id,'$nama','$nim','$alamat')");
+if ($data) {
+    header("location:../../page/mahasiswa.php?pesan=sukses");
+  } else {
+    header("location:../../page/mahasiswa.php?pesan=gagal");
+  };
 ?>
